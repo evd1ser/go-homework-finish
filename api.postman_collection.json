@@ -1,0 +1,304 @@
+{
+	"info": {
+		"_postman_id": "114d4a5c-846d-4f3e-966c-fbf165daee88",
+		"name": "go home last",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\" : \"Some user\",\n    \"password\" : \"Some password\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/auth",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\" : \"Some user\",\n    \"password\" : \"Some password\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/auth",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/stock",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbiI6dHJ1ZSwiZXhwIjoxNjE2NjI1OTQ5LCJuYW1lIjoiU29tZSB1c2VyIn0.Il-376BozBuHZM1WNl0rpHFVP6qTr1Qm7LQXgM--Lto",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\" : \"Some user\",\n    \"password\" : \"Some password\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/stock",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"stock"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/auto/bmw",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbiI6dHJ1ZSwiZXhwIjoxNjE2NjI1OTQ5LCJuYW1lIjoiU29tZSB1c2VyIn0.Il-376BozBuHZM1WNl0rpHFVP6qTr1Qm7LQXgM--Lto",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"max_speed\" : 280,\n    \"distance\" : 400,\n    \"handler\" : \"Auto Motors\",\n    \"stock\" : \"Germany\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/auto/bmw",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auto",
+						"bmw"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/auto/kia",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbiI6dHJ1ZSwiZXhwIjoxNjE2NjI1OTQ5LCJuYW1lIjoiU29tZSB1c2VyIn0.Il-376BozBuHZM1WNl0rpHFVP6qTr1Qm7LQXgM--Lto",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"max_speed\" : 280,\n    \"distance\" : 400,\n    \"handler\" : \"Auto Motors\",\n    \"stock\" : \"Germany\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/auto/kia",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auto",
+						"kia"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET /auto/bmw",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbiI6dHJ1ZSwiZXhwIjoxNjE2NjI1OTQ5LCJuYW1lIjoiU29tZSB1c2VyIn0.Il-376BozBuHZM1WNl0rpHFVP6qTr1Qm7LQXgM--Lto",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/auto/bmw",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auto",
+						"bmw"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT /auto/bmw",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbiI6dHJ1ZSwiZXhwIjoxNjE2NjI1OTQ5LCJuYW1lIjoiU29tZSB1c2VyIn0.Il-376BozBuHZM1WNl0rpHFVP6qTr1Qm7LQXgM--Lto",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"max_speed\" : 580,\n    \"distance\" : 400,\n    \"handler\" : \"BMW\",\n    \"stock\" : \"Germany\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/auto/bmw",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auto",
+						"bmw"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE /auto/bmw",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbiI6dHJ1ZSwiZXhwIjoxNjE2NjI1OTQ5LCJuYW1lIjoiU29tZSB1c2VyIn0.Il-376BozBuHZM1WNl0rpHFVP6qTr1Qm7LQXgM--Lto",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"max_speed\" : 180,\n    \"distance\" : 400,\n    \"handler\" : \"BMW\",\n    \"stock\" : \"Germany\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/auto/bmw",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auto",
+						"bmw"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
