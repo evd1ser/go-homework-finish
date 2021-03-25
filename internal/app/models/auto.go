@@ -1,8 +1,11 @@
 package models
 
-//Auto models...
+import "gorm.io/gorm"
+
+//Auto models...omitempty
 type Auto struct {
-	ID       int    `json:"id"`
+	gorm.Model
+	ID       uint   `gorm:"primarykey" json:"id"`
 	Mark     string `json:"mark"`
 	MaxSpeed int64  `json:"max_speed"`
 	Distance int64  `json:"distance"`
